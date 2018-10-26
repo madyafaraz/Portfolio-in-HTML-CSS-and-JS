@@ -1,0 +1,38 @@
+{
+	
+	"degrees":[
+		{
+			"degree":{
+				"School": "Boston University",
+				"Program":"Web Application Development",
+				"Type":"Graduate Certificate",
+				"Year":"2017"
+				
+				}
+		},
+		
+		{
+			"degree":{
+				"School": "Bahria University, Pakistan",
+				"Program":"Software Engineering",
+				"Type":"Master of Science (MS)",
+				"Year":"2014"
+				
+				}
+			
+		},
+		
+		{
+			"degree":{
+				"School": "University of Engineering and Technology, Paksitan",
+				"Program":"Software Engineering",
+				"Type":"Bachelor of Science (B.S.)",
+				"Year":"2009"
+				
+				}
+			
+		}
+   
+    ]
+
+}

@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Education</title>
+<link rel="stylesheet" href="css/style.css" media="screen" />
+<script src="js/jquery-3.2.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" ></script>
+</head>
+
+<body>
+<header> 
+  <div class="container navBar">
+    <a href="index.html" class="logo"><img src="images/logoWhite.png" alt="Madiha Faraz Logo" id="logoHead"> </a>
+    
+    <nav id="portfolioNav"> 
+    <a href="index.html" title="Home">HOME</a> 
+    <a href="aboutme.html" title="About Me">About Me</a> 
+    <a href="work.html" title="Work">Work</a> 
+    <a href="skills.html" title="Skills">Skills</a> 
+    <a  class="active" href="education.html" title="Education">Education</a> 
+    <a href="interest.html" title="Interests">Interests</a> 
+    <a href="contact.html" title="Contact Me">Contact</a> 
+    </nav>
+  </div>
+</header>           
+                        
+	<div class="smallContainer">
+	
+	
+	<div class="center">
+      <div class="space4"></div>
+      <h1 class="text-black uppercase heavy">Education</h1>
+		<br><br>
+      <p>Education is the most powerful weapon which you can use to change the world!</p>
+    </div>
+    
+    <div class="space4"></div>
+	</div>
+	
+	
+	<div class="container">
+		
+ <!-- table goes here-->
+  <div class="flipBoxWrapper">
+		
+		<div class="flip3D">
+			
+			<div class="front"><img src="images/diploma.png" width="100" alt="certifcate"><p class="frontPara">GRADUATE CERTIFICATE</p></div>
+			<div id="education1" class="back"></div>
+		</div>
+		
+		<div class="flip3D">
+			
+			<div class="front"><img src="images/graduation.png" width="100" alt="gradute"><p class="frontPara">MASTER OF SCIENCE<br>(M.S.)</p></div>
+			<div id="education2" class="back"></div>
+		</div>
+		
+		<div class="flip3D">
+			
+			<div class="front"><img src="images/scholarship.png" width="100" alt="bachelors"><p class="frontPara">BACHELOR OF SCIENCE<br>(B.S.)</p></div>
+			<div id="education3" class="back"></div>
+		</div>
+		
+	</div>
+  	
+	<div class="center">
+		<div class="space4"></div><div class="space2"></div>
+      <h1 class="text-black uppercase heavy">Professional Summary</h1>
+		<div class="space2"></div>
+    </div>
+    
+    
+    
+		<div class="cardBox brands">
+			
+			<div class="cards">
+				<h4 class="red"><span class="count">7</span></h4>
+				<p>Years Experience</p>
+			</div>
+			
+			
+			<div class="cards">
+				<h4 class="red"><span class="count">13</span></h4>
+				<p>Brands Worked</p>
+			</div>
+			
+			
+			
+			<div class="cards">
+				<h4 class="red"><span class="count">15</span></h4>
+				<p>Projects Completed</p>
+			</div>
+			
+			
+			
+			
+			<div class="cards">
+				<h4 class="red"><span class="count">14</span></h4>
+				<p>Apps Built</p>
+			</div>
+			
+			
+				
+			<div class="cards">
+				<h4 class="red"><span class="count">18</span></h4>
+				<p>Years Education</p>
+			</div>
+			
+			
+			
+		
+		</div>
+    
+    
+		<div class="space4"></div>
+  
+  
+	</div>
+	<div class="space3"></div>
+	<br>
+	
+	<br><br>
+ 
+<!-- Footer starts here -->
+ <footer>
+  <div class="socialBar"> <img src="images/logoWhite.png" id="logoFooter" alt="Logo White" width="100"> 
+    <!-- social media icons linked to social media pages-->
+    
+    <p class="copyrights">© 2017 - Boston University - All Rights Reserved.</p>
+    <div class="socialLinks"> <a href="https://www.facebook.com/" title="Facebook Page"><img src="images/fb.png" alt="Facebook Icon"></a> <a href="https://twitter.com/" title="Twitter Page"><img src="images/twitter.png" alt="Twitter Icon"></a> <a href="https://www.linkedin.com/in/madiha-faraz-53526a52/" title="Linkedin Page"><img src="images/linkedin.png" alt="Linkedin Icon"></a> </div>
+  </div>
+</footer>
+	<script src="js/script.js"></script>
+<script>
+	$(document).ready(function(){
+    
+	 getFlipDegrees();
+});
+	
+$(".count").each(function() {
+	$(this).prop('Counter',0).animate({Counter:$(this).text()}, 
+	{  
+	duration: 2000,
+		easing:'swing',
+		step: function(now){
+			$(this).text(Math.ceil(now));
+		}
+	});
+	
+});
+		
+		
+
+	</script>	
+</body>
+</html>
+
+
+
+
+
+

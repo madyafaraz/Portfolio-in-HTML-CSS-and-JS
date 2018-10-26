@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Interests</title>
+<link rel="stylesheet" href="css/style.css" media="screen" />
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.mousewheel.pack.js"></script>
+<link rel="stylesheet" href="css/jquery.fancybox.css"/>
+<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css" />
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-thumbs.js"></script>
+
+</head>
+
+<body onLoad="loadImage()">
+
+<header> 
+  <div class="container navBar">
+    <a href="index.html" class="logo"><img src="images/logoWhite.png" alt="Madiha Faraz Logo" id="logoHead"> </a>
+    
+    <nav id="portfolioNav"> 
+    <a href="index.html" title="Home">HOME</a> 
+    <a href="aboutme.html" title="About Me">About Me</a> 
+    <a href="work.html" title="Work">Work</a> 
+    <a href="skills.html" title="Skills">Skills</a> 
+    <a href="education.html" title="Education">Education</a> 
+    <a class="active" href="interest.html" title="Interests">Interests</a> 
+    <a href="contact.html" title="Contact Me">Contact</a> 
+    </nav>
+  </div>
+</header>
+
+
+<div class="container">
+    <div class="center">
+      <div class="space4"></div>
+      <h1 class="text-black uppercase heavy">My Interests</h1>
+		<div class="space2"></div>
+     	<p>"Make it as simple as possible, but not simpler."<span class="semibold text-black">-Albert Einstein</span></p>
+		<div class="space2"></div>
+		
+      
+    </div>
+
+  </div>
+
+
+
+	<section>
+			
+		<div class="filter">
+			<input type="button" id="filterAnimals" name="animals" value="Animals" />
+			<input type="button" id="filterHumans" name="humans" value="Humans" />
+			<input type="button" id="filterNature" name="nature" value="Nature" />
+			<br>
+			
+			</div>
+		
+		
+		<div class="container">
+		
+			<div class="imageGallery" id="divGallery">
+				<div id="animalsDiv" class="wrappedElements" ></div>
+				<div id="humansDiv" class="wrappedElements"></div>
+				<div id="natureDiv" class="wrappedElements"></div>
+			
+			</div>
+		
+		</div>
+	</section>
+
+
+<footer>
+  <div class="socialBar"> <img src="images/logoWhite.png" id="logoFooter" alt="Logo White" width="100"> 
+    <!-- social media icons linked to social media pages-->
+    
+    <p class="copyrights">© 2017 - Boston University - All Rights Reserved.</p>
+    <div class="socialLinks"> <a href="https://www.facebook.com/" title="Facebook Page"><img src="images/fb.png" alt="Facebook Icon"></a> <a href="https://twitter.com/" title="Twitter Page"><img src="images/twitter.png" alt="Twitter Icon"></a> <a href="https://www.linkedin.com/in/madiha-faraz-53526a52/" title="Linkedin Page"><img src="images/linkedin.png" alt="Linkedin Icon"></a> </div>
+  </div>
+</footer>
+	<script src="js/script.js"></script>
+	
+<script>
+	
+$(document).ready(function(){
+	
+	$("a.fancybox").fancybox();
+});	
+	
+$("#filterAnimals").click(function() {
+    $("#animalsDiv").show();
+	$("#humansDiv").hide();
+	$("#natureDiv").hide();
+	$("#filterAnimals").addClass("activeLink");
+	$("#filterNature").removeClass("activeLink");
+	$("#filterHumans").removeClass("activeLink");
+	//$(this).css("background", "#eeb013");
+	   
+    });
+ 
+$("#filterHumans").click(function() {
+    $("#animalsDiv").hide();
+	$("#humansDiv").show();
+	$("#natureDiv").hide();
+	$("#filterHumans").addClass("activeLink");
+	$("#filterNature").removeClass("activeLink");
+	$("#filterAnimals").removeClass("activeLink");
+	//$(this).css("background", "#eeb013");
+	
+    });
+		
+$("#filterNature").click(function() {
+    $("#animalsDiv").hide();
+	$("#humansDiv").hide();
+	$("#natureDiv").show();
+	$("#filterNature").addClass("activeLink");
+	$("#filterHumans").removeClass("activeLink");
+	$("#filterAnimals").removeClass("activeLink");
+	//$(this).css("background", "#eeb013");
+	    
+    });
+	
+
+
+		
+</script>
+
+</body>
+</html>
